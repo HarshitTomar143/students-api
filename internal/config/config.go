@@ -9,7 +9,7 @@ import (
 
 // Loading the yaml file values into struct fields
 type HTTPServer struct {
-	Address string
+	Address string `yaml:"address" env-required:"true"`
 }
 
 type Config struct {
